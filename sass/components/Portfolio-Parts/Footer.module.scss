@@ -1,0 +1,47 @@
+.footer {
+    background-color: transparent;
+    padding: 7rem 7%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    @media (max-width: 600px){
+        grid-template-columns: 1fr;
+        justify-content: center;
+        row-gap: 5rem;
+    }
+    
+
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    &__image {
+        background-image: url('../../../assets/Landing1.png');
+        background-position: center;
+        background-size: cover;
+        border-radius: 0.5rem;
+        width: 6rem;
+        height: 6rem;
+        &_1 {
+            background-image: url('../../../assets/Landing1.png');
+        }
+        &_2 {
+            background-image: url('../../../assets/Landing4.png');
+        }
+    }
+
+
+}
+
+.logo {
+    width: 5rem;
+    height: 5rem;
+    background-image: url('../../../my-portfolio-logo.png');
+    background-position: center;
+    background-size: cover;
+};

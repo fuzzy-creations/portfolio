@@ -1,0 +1,49 @@
+.project {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 27rem;
+    width: 40rem;
+    cursor: pointer;
+
+    &__side {
+        height: 27rem;
+        width: 40rem;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        //width: 100%;
+        backface-visibility: hidden;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba(#000000, .15);
+
+        &__front {
+            background-color: red;
+            background-position: center;
+            background-size: cover;
+        }
+
+        &__back {
+            transform: rotateY(180deg); 
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            font-weight: 300;
+            color: red;
+        }
+
+    }
+
+    // card-side__back
+    
+    &:hover &__side__front {
+        transform: rotateY(-180deg);
+    }
+    &:hover &__side__back {
+        transform: rotateY(0);
+    }
+}

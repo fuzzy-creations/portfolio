@@ -1,0 +1,93 @@
+.grid {
+    display: grid;
+    row-gap: 1rem;
+    column-gap: 2rem;
+    height: 100%;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &:hover {
+        &::-webkit-scrollbar-thumb { background-color: var(--text_light) }
+        &::-webkit-scrollbar { opacity: 1; }  
+        &::-webkit-scrollbar-track { background-color: var(--background_light);}      
+    };
+    &::-webkit-scrollbar {            /* height of horizontal scrollbar ← You're missing this */
+        width: 8px;   
+        height: 8px;            /* width of vertical scrollbar */
+        border-radius: 3rem;
+        opacity: 0;
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-track {
+        border-radius: 3rem;
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: var(--text_light_medium);
+        border-radius: 3rem;
+        background-color: transparent;
+    }
+}
+.rowSpaced {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    &:hover {
+        &::-webkit-scrollbar-thumb { background-color: var(--text_light) }
+        &::-webkit-scrollbar { opacity: 1; }  
+        &::-webkit-scrollbar-track { background-color: var(--background_light);}      
+    };
+    &::-webkit-scrollbar {            /* height of horizontal scrollbar ← You're missing this */
+        width: 8px;               /* width of vertical scrollbar */
+        border-radius: 3rem;
+        opacity: 0;
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-track {
+        border-radius: 3rem;
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: var(--text_light_medium);
+        border-radius: 3rem;
+        background-color: transparent;
+    }
+};
+
+.columnSpaced {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+    &:hover {
+        &::-webkit-scrollbar-thumb { background-color: var(--text_light) }
+        &::-webkit-scrollbar { opacity: 1; }  
+        &::-webkit-scrollbar-track { background-color: var(--background_light);}      
+    };
+    &::-webkit-scrollbar {            /* height of horizontal scrollbar ← You're missing this */
+        width: 8px;               /* width of vertical scrollbar */
+        border-radius: 3rem;
+        opacity: 0;
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-track {
+        border-radius: 3rem;
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: var(--text_light_medium);
+        border-radius: 3rem;
+        background-color: transparent;
+    }
+};

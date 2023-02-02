@@ -1,0 +1,142 @@
+.project {
+    background-color: #1e1e37;
+    padding: 5rem 7%;
+    @media (max-width: 330px){
+        padding: 5rem 3%;
+    }
+}
+
+.header {
+    min-height: 50vh;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media (max-width: 1050px){
+        grid-template-columns: 2fr 1fr;
+    }
+    @media (max-width: 930px){
+        grid-template-columns: 1fr;
+    }
+}
+
+.featured {
+    @media (max-width: 930px){
+        display: none;
+    }
+    & img {
+        height: auto;
+        width: 60rem;
+        border-radius: 2rem;
+        @media (max-width: 1250px){
+            width: 30rem;
+        }
+    }
+}
+
+.icon {
+    @media (max-width: 550px){
+        display: none;
+    }
+    & svg {
+        font-size: 2rem;
+        color: var(--grey);
+    }
+}
+
+.details {
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+}
+.images {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10rem;
+    padding-top: 20rem;
+    padding-bottom: 10rem;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    text-align: center;
+    gap: 6rem;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+    @media (max-width: 1820px){
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 880px){
+        grid-template-columns: 1fr;
+    }
+    &__item {
+        background-color: #090621;
+        // padding: 2rem;
+        border-radius: 2rem;
+        height: 30rem;
+        // width: 58rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        @media (max-width: 1220px){
+            height: 20rem;
+        }
+        @media (max-width: 650px){
+        }
+        & img {
+            height: 100%;
+            width: auto;
+            object-fit: contain;
+            border-radius: 1rem;
+
+        }
+    }
+}
+
+
+.action {
+    width: 20rem !important;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    @media (max-width: 420px){
+        width: 15rem !important;
+    }
+}
+
+.logo {
+    width: 8rem;
+    height: 8rem;
+    background-image: url('../../my-portfolio-logo.png');
+    background-position: center;
+    background-size: cover;
+    align-self: center;
+}
+
+.back {
+    justify-self: flex-end;
+    align-self: center;
+    @media (max-width: 800px){
+        position: absolute;
+        top: 5rem;
+        right: 5rem;
+    }
+}
+

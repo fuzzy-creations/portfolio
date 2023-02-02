@@ -1,0 +1,109 @@
+.sideup {
+    animation-duration: 1s;
+    animation-name: slideup;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.sidedown {
+    animation-duration: 1s;
+    animation-name: slidedown;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+
+.sideright {
+    animation-duration: 1s;
+    animation-name: slideright;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.sideleft {
+    animation-duration: 1s;
+    animation-name: slideleft;
+    animation-fill-mode: forwards;
+    opacity: 0;
+};
+
+.siderightmodal {
+    animation-duration: 1s;
+    animation-name: slideright;
+    // animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    opacity: 1;
+}
+
+.sideleftmodal {
+    animation-duration: 1s;
+    animation-name: slideleft;
+    // animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    opacity: 1;
+};
+
+
+@keyframes slideright {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+  
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+@keyframes slideleft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+  
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+
+  @keyframes slideup {
+    0% {
+      transform: translateY(100%);
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
+  @keyframes slidedown {
+    0% {
+      transform: translateY(-100%);
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

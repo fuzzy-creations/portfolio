@@ -1,0 +1,26 @@
+.intro {
+    min-height: 100vh;
+    background-color: #090621;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 12rem;
+    column-gap: 10%;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    padding: 15rem 9%;
+    @media (max-width: 1200px){
+        grid-template-columns: 2fr 1fr;
+    }
+    @media (max-width: 600px){
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.icon {
+    & svg {
+        font-size: 10rem;
+        color: var(--grey);
+    }
+}

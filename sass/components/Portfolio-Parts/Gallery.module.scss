@@ -1,0 +1,26 @@
+.gallery {
+    background-color: var(--color-third-background);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10rem;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    &__portfolio {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 8rem;
+        column-gap: 3rem;
+        width: 85%;
+        justify-items: center;
+        @media (max-width: 1450px){
+            grid-template-columns: repeat(2, 1fr);
+            width: 90%;
+        }
+        @media (max-width: 900px){
+            grid-template-columns: 1fr;
+        }
+    }
+}
